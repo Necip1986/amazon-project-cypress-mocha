@@ -1,0 +1,19 @@
+{
+  "name": "amazonproject-cypress-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all-tests": "./node_modules/.bin/cypress run",
+    "alltest-headed":"./node_modules/.bin/cypress run --headed",
+    "alltest-chrome":"./node_modules/.bin/cypress run --headed --browser=chrome",
+    "alltest-dashboard":"./node_modules/.bin/cypress run --record --key 328f1171-5bbd-4df2-9ede-59a63e2c805f"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
