@@ -1,7 +1,7 @@
 {
     "chromeWebSecurity":false,
     "defaultCommandTimeout":6000,
-    "pageLoadTimeout":10000,
+    "pageLoadTimeout":30000,
     "execTimeout":6000,
     "video":false,
      "retries": { 

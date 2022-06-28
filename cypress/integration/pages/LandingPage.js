@@ -1,8 +1,15 @@
-class LandingPage{
-    getHelloMenu(){ //we will get object
-        return cy.get('#nav-link-accountList > .nav-line-2 > .nav-icon')
+class LandingPage {
+    getLogo() {
+        return cy.get('#nav-logo-sprites')
+    }
+    getHelloMenu() { 
+        return cy.get('#nav-link-accountList')
 
+    }
+
+    getSignInLink(){
+        return cy.contains('Sign in',{force:true})
     }
 }
 
-export default LandingPage; //we need to make this class public
+export default LandingPage;

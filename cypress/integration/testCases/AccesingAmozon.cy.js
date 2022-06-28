@@ -2,20 +2,22 @@
 
 import LandingPage from "../pages/LandingPage";
 
-describe('deneme',function(){
-
+describe('Accesing Amazon Website',()=>{
     before(function(){
         cy.fixture('basicData').then(
             function(data){
                 this.data=data;
             }
         )
+
     })
-    it("deneme test",function(){
-        
+
+    it('verified with title and logo',function(){
         const landingPage=new LandingPage();
+
         cy.visit(this.data.amazon_url)
-        landingPage.getHelloMenu().trigger('mouseover').wait(3000)
+        cy.title().should('contain','Amazon')
+        landingPage.getLogo().should('be.visible')
+
     })
-    
 })
