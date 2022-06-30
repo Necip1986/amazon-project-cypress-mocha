@@ -10,6 +10,26 @@ class LandingPage {
     getSignInLink(){
         return cy.contains('Sign in',{force:true})
     }
+
+    getAllMenu(){
+        return cy.get('#nav-hamburger-menu')
+    }
+
+    getSmartHome(){
+        return cy.get('.hmenu-visible > :nth-child(9) > .hmenu-item > div')
+    }
+
+    getAllDepartment(){
+        return cy.get("ul[class='hmenu hmenu-visible hmenu-translateX'] li a[class='hmenu-item']")
+    }
+
+    getSearchBox(){
+        return cy.get('#twotabsearchtextbox')
+    }
+
+    getSearchButton(){
+        return cy.get('#nav-search-submit-button')
+    }
 }
 
 export default LandingPage;
