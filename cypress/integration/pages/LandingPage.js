@@ -19,7 +19,7 @@ class LandingPage {
         return cy.get('.hmenu-visible > :nth-child(9) > .hmenu-item > div')
     }
 
-    getAllDepartment(){
+    getSubCategories(){
         return cy.get("ul[class='hmenu hmenu-visible hmenu-translateX'] li a[class='hmenu-item']")
     }
 

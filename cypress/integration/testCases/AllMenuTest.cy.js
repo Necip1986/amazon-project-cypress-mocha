@@ -14,7 +14,7 @@ describe('All Menu function',()=>{
         cy.visit(this.data.amazon_url)
         landingPage.getAllMenu().click({force:true}).wait(2000)
         landingPage.getSmartHome().click({force:true})
-        landingPage.getAllDepartment().should('have.length',16)
+        landingPage.getSubCategories().should('have.length',16)
 
     })
 })

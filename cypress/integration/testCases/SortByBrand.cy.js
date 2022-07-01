@@ -16,7 +16,7 @@ describe('Sort by Brand',()=>{
         searchResultPage.getSonyFromSortByBrand().click()
 
         searchResultPage.getSearchedProductList().then((item) => { 
-            const itemCount = Cypress.$(item).length;
+           const itemCount = Cypress.$(item).length;
            cy.log(itemCount)
            for(var i=0; i<itemCount; i++){
             searchResultPage.getSearchedProductList().eq(i).should(productText => expect(productText.text().toLowerCase()).to.contain('sony'));
