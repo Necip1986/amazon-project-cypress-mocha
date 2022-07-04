@@ -35,6 +35,18 @@ class CreateListPage{
     getConfirmDeletedHeaderSign(){
         return cy.get('.al-intro-banner-header')
     }
+
+    getProductInTheList(){
+        return cy.get("h2 a[class='a-link-normal']")
+    }
+
+    getDeleteFromList(){
+        return cy.contains('Delete')
+    }
+
+    getDeletedListProductConfirmation(){
+        return cy.contains('Deleted')
+    }
 }
 
 export default CreateListPage;

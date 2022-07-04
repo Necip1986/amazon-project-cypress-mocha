@@ -93,10 +93,6 @@ describe('Bottom Links Function', () => {
 
 
                 cy.go('back', { force: true })
-
-
-
-
             }
         })
 
@@ -129,4 +125,6 @@ describe('Bottom Links Function', () => {
 
         })
     })
+
+    
 })

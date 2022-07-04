@@ -29,6 +29,10 @@ class ProductInfoPage{
         return cy.get('#attach-close_sideSheet-link')
     }
 
+    getAddToShoppingList(){
+        return cy.contains('Add to List')
+    }
+
 
 }
 
